@@ -1,20 +1,24 @@
-html {
-  background: url(img/drumkit-img.jpg) center;
-  background-size: cover;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
+  background: url(img/drumkit-img.jpg) center;
+  background-size: cover;
+}
+
+.keys-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 52vh;
+  justify-content: flex-end;
 }
 
 .keys {
   display: flex;
-  height: 100vh;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  height: auto;
 }
 
 .key {
@@ -47,4 +51,22 @@ span {
   color: gold;
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+.directions-wrapper {
+  display: flex;
+  height: 48vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.directions {
+  color: gold;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border: solid 3px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 50%;
+  text-align: center;
 }
